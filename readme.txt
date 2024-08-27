@@ -53,11 +53,61 @@ Spacy est l'une des librairies principales utilisées dans ce projet pour le tra
 Outre Spacy, le projet ATA nécessite d'autres librairies pour fonctionner correctement.
 Vous pouvez installer toutes les librairies nécessaires en une seule commande :
 
-pip install streamlit pandas scikit-learn sentence-transformers seaborn matplotlib wordcloud requests nltk umap-learn plotly scipy beautifulsoup4 lxml html5lib numpy streamlit-option-menu pyLDAvis
-pip install yt-dlp streamlit -> mp4TOmp3
+pip install streamlit youtube-transcript-api yt-dlp spacy scikit-learn numpy pandas matplotlib wordcloud google-api-python-client PyMuPDF gensim pyLDAvis sentence-transformers seaborn umap-learn plotly beautifulsoup4 nltk
 
-## Lancer l'Application
+### Détails des bibliothèques utilisées
+
+    streamlit : Utilisé pour créer l'interface utilisateur de l'application.
+    youtube-transcript-api : Permet d'extraire les transcriptions des vidéos YouTube.
+    yt-dlp : Utilisé pour télécharger des vidéos YouTube.
+    os : Bibliothèque standard Python pour les opérations sur le système de fichiers.
+    re : Utilisé pour les expressions régulières.
+    spacy : Utilisé pour le traitement du langage naturel.
+    scikit-learn : Fournit des outils pour l'extraction de caractéristiques, la classification, le clustering, etc.
+    numpy : Bibliothèque pour les opérations mathématiques et la manipulation de tableaux.
+    pandas : Utilisé pour la manipulation de données sous forme de DataFrame.
+    matplotlib : Utilisé pour la création de graphiques.
+    wordcloud : Utilisé pour générer des nuages de mots à partir de texte.
+    google-api-python-client : Utilisé pour interagir avec les API de Google, comme l'API YouTube.
+    datetime : Bibliothèque standard pour manipuler les dates et les heures.
+    fitz (PyMuPDF) : Utilisé pour extraire du texte à partir de fichiers PDF.
+    gensim : Fournit des outils pour la modélisation de sujets (LDA) et la construction de phrases.
+    pyLDAvis : Utilisé pour visualiser les résultats de l'analyse LDA.
+    sentence-transformers : Utilisé pour l'embedding de phrases et le calcul de similarités cosinus.
+    umap-learn : Utilisé pour la réduction de dimensionnalité.
+    plotly : Utilisé pour la création de graphiques interactifs.
+    beautifulsoup4 : Utilisé pour le parsing de documents HTML.
+    nltk : Utilisé pour diverses tâches de traitement du langage naturel comme le tokenization et la gestion des stopwords.
+    scipy : Utilisé pour des calculs scientifiques, notamment pour le clustering hiérarchique.
+    hashlib : Utilisé pour générer des hachages, par exemple pour identifier des doublons.
+
+### Installation détaillée
+
+pip install streamlit
+pip install youtube-transcript-api
+pip install yt-dlp
+pip install spacy
+python -m spacy download fr_core_news_lg
+pip install scikit-learn
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip install wordcloud
+pip install google-api-python-client
+pip install PyMuPDF
+pip install gensim
+pip install pyLDAvis
+pip install sentence-transformers
+pip install umap-learn
+pip install plotly
+pip install beautifulsoup4
+pip install nltk
+pip install scipy
+
+
+### Lancer l'Application
 Dans le terminal python : streamlit run main.py
 
-## Arreter l'application :
+### Arreter l'application :
 Si vous souhaitez arrêter l'application, retournez dans votre terminal et appuyez sur Ctrl + C.
+

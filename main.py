@@ -57,9 +57,7 @@ if selected == "Accueil":
     
     Mais restez à l'affût, car cette version Bêta est encore en développement et pourrait s'enrichir d'autres fonctionnalités et améliorations.
 
-    Explorez les différentes options du menu pour commencer et n'oubliez pas de me faire part de vos retours. C'est grâce à eux que cette application pourra s'améliorer !
-
-    **Découvrez-en plus sur mes travaux sur [www.codeandcortex.fr](http://www.codeandcortex.fr).**
+    Explorez les différentes options du menu pour commencer et n'oubliez pas de me faire part de vos retours. C'est grâce à vous que cette application pourra s'améliorer !
 
     """)
 

@@ -30,9 +30,9 @@ Elle intègre plusieurs algorithmes et techniques d'analyse textuelle, notamment
 - **Recherche de doublons Europresse** : Identifie les doublons et les articles courts dans les fichiers Europresse.
 - **Voice to text** : Convertit les fichiers audio en texte (transcription vocale).
 - **Scraper les commentaires YouTube** : Récupère les commentaires des vidéos YouTube pour analyse.
+- **MP4 to MP3** : Convertit les fichiers vidéo MP4 en fichiers audio MP3.
 
-- **MP4 to MP3** (En construction) : Convertit les fichiers vidéo MP4 en fichiers audio MP3.
-- **Scraper** : html to text** (En construction) : Récupère le contenu HTML de pages web et le convertit en texte brut.
+- **Scraper site web** : html to text** (En construction) : Récupère le contenu HTML de pages web et le convertit en texte brut.
 - **AFC** : Analyse Factorielle de Correspondance (En construction)
 - **Adaptation des scripts au modèle Camembert** (En construction)
 - **Analyse de graph** (En construction)
@@ -105,9 +105,16 @@ pip install nltk
 pip install scipy
 
 
+### Installation de ffmpeg
+L'installation FFmpeg est requis par yt-dlp pour le téléchargement et la manipulation des vidéos.
+L'installation peut être delicate surtout sous Mac.
+Installation sous macOS
+Ouvrez le terminal.
+Installez FFmpeg via Homebrew (si Homebrew n'est pas installé, suivez les instructions sur https://brew.sh/) :
+bash : brew install ffmpeg
+
 ### Lancer l'Application
 Dans le terminal python : streamlit run main.py
 
 ### Arreter l'application :
 Si vous souhaitez arrêter l'application, retournez dans votre terminal et appuyez sur Ctrl + C.
-

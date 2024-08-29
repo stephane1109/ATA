@@ -4,7 +4,7 @@
 Version : 0.1.0-beta
 Date : 22 août 2024
 # Auteur : Stéphane Meurisse
-# Contact : stephane.meurisse@example.com
+# Contact : stephane.meurisse@gmail.com
 # Site Web : https://www.codeandcortex.fr
 # LinkedIn : https://www.linkedin.com/in/st%C3%A9phane-meurisse-27339055/
 # Licence : Ce programme est un logiciel libre : vous pouvez le redistribuer selon les termes de la Licence Publique Générale GNU v3

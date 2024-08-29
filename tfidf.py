@@ -1,7 +1,7 @@
 ##########################################
 # Projet : Analyse Textuelle Avancée (ATA)
 # Auteur : Stéphane Meurisse
-# Contact : stephane.meurisse@example.com
+# Contact : stephane.meurisse@gmail.com
 # Site Web : https://www.codeandcortex.fr
 # LinkedIn : https://www.linkedin.com/in/st%C3%A9phane-meurisse-27339055/
 # Date : 22 août 2024

@@ -4,10 +4,11 @@
 # Contact : stephane.meurisse@gmail.com
 # Site Web : https://www.codeandcortex.fr
 # LinkedIn : https://www.linkedin.com/in/st%C3%A9phane-meurisse-27339055/
-# Date : 22 août 2024
+# Date : 29 août 2024
 # Version : 0.2.1-beta
 # Licence : Ce programme est un logiciel libre : vous pouvez le redistribuer selon les termes de la Licence Publique Générale GNU v3
 ##########################################
+
 
 import streamlit as st
 import requests
@@ -36,7 +37,21 @@ def afficher_interface_france_inter_audio():
     st.markdown("""
     **Fonctionnement :**
 
-    Si vous avez l'URL directe d'un fichier audio (par exemple un podcast ou une émission de France Inter), vous pouvez la coller ici pour télécharger l'audio directement sur votre machine.
+    Il faut trouver l'URL directe du fichier audio, vous pourrez ainsi la coller dans l'interface ATA.
+
+    ### Comment trouver le lien de l'audio :
+
+    1. Accédez à la page de l'émission sur France Inter.
+    2. Faites défiler vers le bas de la page jusqu'à voir le lecteur audio.
+    3. **Clique droit** sur le titre de la piste audio.
+    4. Sélectionnez **"Inspecter l'élément"** dans le menu contextuel.
+    5. Dans l'inspecteur qui s'ouvre, repérez la balise :
+       
+       ```html
+       <audio hidden="" preload="none" crossorigin="anonymous" src="https://media.radiofrance-podcast.net/podcast09/10076-29.08.2024-ITEMA_23842676-2024C36128S0242-21.mp3"></audio>
+       ```
+    6. **Clique droit** sur le lien mp3 ou mp4 dans la balise `src` et choisissez **"Ouvrir dans un nouvel onglet"**.
+    7. Copiez l'URL de l'audio depuis la barre d'adresse du nouvel onglet et collez-la dans l'interface ATA ci-dessous.
     """)
 
     # Saisie de l'URL directe de l'audio
@@ -44,7 +59,7 @@ def afficher_interface_france_inter_audio():
 
     # Sélection du répertoire de sortie
     output_directory = st.text_input("Sélectionnez le répertoire de sauvegarde",
-                                     value=os.path.expanduser("~/Documents/ATA"))
+                                     value=os.path.expanduser("~/Documents"))
 
     # Bouton pour lancer le téléchargement
     if st.button("Télécharger l'audio"):
@@ -52,3 +67,4 @@ def afficher_interface_france_inter_audio():
             telecharger_audio(url, output_directory)
         else:
             st.error("Veuillez entrer l'URL et choisir un répertoire de sauvegarde.")
+

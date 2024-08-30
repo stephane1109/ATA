@@ -1,6 +1,3 @@
-# pip install streamlit
-# pip install streamlit-option-menu
-
 import streamlit as st
 
 def afficher_faq():
@@ -99,7 +96,27 @@ Différences Clés
         - **Dendrogramme :** Pour CAH, le dendrogramme visualise la hiérarchie des clusters.
 
 
-### 3. Paramètres des Algorithmes :
+### 3. Le scraping :
+#### Le scraping est une technique utilisée pour extraire des données de sites web, mais sa légalité dépend du contexte, de la manière dont il est effectué et des lois.
+Voici quelques points clés à considérer :
+
+    - **Conditions d'utilisation des sites web :**
+        La plupart des sites web ont des conditions d'utilisation ou des termes de service qui stipulent si le scraping est autorisé ou non. 
+        Si un site interdit explicitement le scraping dans ses conditions d'utilisation, il est illégal de scraper ce site, même dans un cadre académique ou de recherche.
+
+    - **Loi sur la protection des données :**
+        Le scraping peut enfreindre des lois sur la protection des données, surtout si les données extraites contiennent des informations personnelles identifiables (PII). 
+        Par exemple, en Europe, le Règlement Général sur la Protection des Données (RGPD) impose des règles strictes sur la collecte et le traitement des données personnelles.
+
+    - **Droit d'auteur et copyright :**
+        Le contenu d'un site web est généralement protégé par des droits d'auteur. Le fait de scraper du contenu protégé sans autorisation peut être considéré comme une violation du droit d'auteur, même si c'est à des fins de recherche.
+
+    - **Usage académique et de recherche :**
+        Dans certains cas, le scraping peut être toléré pour un usage académique ou de recherche, surtout s'il est effectué dans le cadre d'une étude respectant les principes d'éthique en recherche.
+        Toutefois, cela n'exonère pas le chercheur des obligations légales, comme le respect des conditions d'utilisation du site et des lois locales sur la protection des données.
+
+    - **Consentement et éthique :**
+        Dans un cadre académique, il est recommandé d'obtenir le consentement explicite de l'administrateur du site web avant de procéder au scraping. 
 
     """)
 

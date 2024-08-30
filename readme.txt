@@ -1,8 +1,8 @@
 # Analyse Textuelle Avancée (ATA)
 
 ## Version
-Version : 0.1.0-beta
-Date : 22 août 2024
+Version : 0.3.1-beta
+Date : 29 août 2024
 # Auteur : Stéphane Meurisse
 # Contact : stephane.meurisse@gmail.com
 # Site Web : https://www.codeandcortex.fr
@@ -31,8 +31,11 @@ Elle intègre plusieurs algorithmes et techniques d'analyse textuelle, notamment
 - **Voice to text** : Convertit les fichiers audio en texte (transcription vocale).
 - **Scraper les commentaires YouTube** : Récupère les commentaires des vidéos YouTube pour analyse.
 - **MP4 to MP3** : Convertit les fichiers vidéo MP4 en fichiers audio MP3.
+- **Scraper site web** : html to text** : Récupère le contenu HTML de pages web et le convertit en texte brut - cette finctionnalité est vraiment à l'état de test
+- **Scraper Radio France (France Inter - France Culture) : Récupère la piste audio
+- **MP3 to text : converti le mp3 en texte avec l'application whisper d'OpenAi
 
-- **Scraper site web** : html to text** (En construction) : Récupère le contenu HTML de pages web et le convertit en texte brut.
+###A développer
 - **AFC** : Analyse Factorielle de Correspondance (En construction)
 - **Adaptation des scripts au modèle Camembert** (En construction)
 - **Analyse de graph** (En construction)
@@ -53,7 +56,7 @@ Spacy est l'une des librairies principales utilisées dans ce projet pour le tra
 Outre Spacy, le projet ATA nécessite d'autres librairies pour fonctionner correctement.
 Vous pouvez installer toutes les librairies nécessaires en une seule commande :
 
-pip install streamlit youtube-transcript-api yt-dlp spacy scikit-learn numpy pandas matplotlib wordcloud google-api-python-client PyMuPDF gensim pyLDAvis sentence-transformers seaborn umap-learn plotly beautifulsoup4 nltk
+pip install streamlit youtube-transcript-api yt-dlp spacy scikit-learn numpy pandas matplotlib wordcloud google-api-python-client PyMuPDF gensim pyLDAvis sentence-transformers seaborn umap-learn plotly beautifulsoup4 nltk selenium webdriver-manager pydub
 
 ### Détails des bibliothèques utilisées
 
@@ -80,6 +83,9 @@ pip install streamlit youtube-transcript-api yt-dlp spacy scikit-learn numpy pan
     nltk : Utilisé pour diverses tâches de traitement du langage naturel comme le tokenization et la gestion des stopwords.
     scipy : Utilisé pour des calculs scientifiques, notamment pour le clustering hiérarchique.
     hashlib : Utilisé pour générer des hachages, par exemple pour identifier des doublons.
+    pydub :
+    selenium :
+    webdriver-manager :
 
 ### Installation détaillée
 
@@ -103,6 +109,11 @@ pip install plotly
 pip install beautifulsoup4
 pip install nltk
 pip install scipy
+pip install selenium
+pip install webdriver-manager
+pip install pydub
+pip install selenium
+pip install webdriver-manager
 
 
 ### Installation de ffmpeg
@@ -112,6 +123,10 @@ Installation sous macOS
 Ouvrez le terminal.
 Installez FFmpeg via Homebrew (si Homebrew n'est pas installé, suivez les instructions sur https://brew.sh/) :
 bash : brew install ffmpeg
+
+### Installation de Whisper
+pip install git+https://github.com/openai/whisper.git
+
 
 ### Lancer l'Application
 Dans le terminal python : streamlit run main.py
